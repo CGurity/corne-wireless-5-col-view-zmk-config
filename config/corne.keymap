@@ -53,7 +53,7 @@
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <11 12>;
+            key-positions = <0 1>;
         };
 
         combo_tab {
@@ -73,7 +73,7 @@
 
         combo_caps {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <14 15>;
+            key-positions = <13 16>;
         };
 
         combo_prtsc {
@@ -115,7 +115,7 @@
 
             display-name = "Num+Nav";
             bindings = <
-  &to 5   &kp HOME  &kp UP_ARROW    &kp END    &kp PG_UP    &kp PERIOD    &kp N7                    &kp N8         &kp N9                  &kp KP_EQUAL
+  &to 5   &kp HOME  &kp UP_ARROW    &kp END    &kp PG_UP    &kp PERIOD    &kp N7                    &kp N8         &kp N9                  &kp EQUAL
   &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp PG_DN    &kp SLASH     &kht LEFT_SHIFT NUMBER_4  &kht LCTRL N5  &kht LEFT_ALT NUMBER_6  &kp MINUS
   &trans  &trans    &trans          &trans     &trans       &kp ASTERISK  &kp NUMBER_1              &kp NUMBER_2   &kp NUMBER_3            &kp PLUS
                     &to 0           &trans     &trans       &trans        &trans                    &kp N0
