@@ -7,18 +7,18 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/outputs.h>
 
 &mt {
     flavor = "tap-preferred";
     tapping_term_ms = <200>;
 };
+
 &mmv {
     time-to-max-speed-ms = <680>;
     acceleration-exponent = <2>;
 };
-
 
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
@@ -111,7 +111,7 @@
 
             display-name = "Base";
             bindings = <
-  &kht EXCLAMATION Q  &kht AT_SIGN W   &kht RA(E) E  &kp R              &kp T             &kp Y          &kht RA(U) U       &kht RA(I) I     &kht RA(O) O        &kp SEMICOLON
+  &kht EXCLAMATION Q  &kht AT_SIGN W   &kht RA(E) E  &kp R              &lt 6 T           &kp Y          &kht RA(U) U       &kht RA(I) I     &kht RA(O) O        &kp SEMICOLON
   &kht RA(A) A        &kht LEFT_ALT S  &kht LCTRL D  &kht LEFT_SHIFT F  &lt 3 G           &kht MINUS H   &kht LEFT_SHIFT J  &kht LCTRL K     &kht LEFT_ALT L     &kht PLUS P
   &kp Z               &kht LC(X) X     &kht LC(C) C  &kht LC(V) V       &kht LC(B) B      &kht RA(N) N   &kht SQT M         &kht HASH COMMA  &kht RA(SLASH) DOT  &kht QUESTION SLASH
                                        &lt 1 DEL     &kp SPACE          &kp LEFT_SHIFT    &kp BACKSPACE  &kp RET            &lt 2 TAB
@@ -178,6 +178,17 @@
   &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12
                   &to 0   &trans  &trans    &trans  &trans  &trans
             >;
+        };
+
+        mouse {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans       &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans
+  &trans  &trans  &trans  &trans  &trans       &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+  &trans  &trans  &trans  &trans  &trans       &trans  &trans          &trans          &trans           &trans
+                  &trans  &trans  &mkp MCLK    &trans  &trans          &trans
+            >;
+
+            label = "mouse";
         };
     };
 };
