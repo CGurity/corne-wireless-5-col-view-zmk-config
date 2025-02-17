@@ -135,10 +135,10 @@
 
             display-name = "Sym+Media";
             bindings = <
-  &trans     &kp BACKSLASH  &kp PIPE          &kp LEFT_BRACE    &kp RBRC             &trans  &to 0              &trans            &to 4            &trans
-  &kp GRAVE  &kp TILDE      &kp MINUS         &kp LPAR          &kp RPAR             &trans  &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &trans
-  &trans     &kp AMPERSAND  &kp GREATER_THAN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &trans  &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT       &trans
-                            &trans            &trans            &trans               &trans  &trans             &trans
+  &trans     &kp BACKSLASH  &kp PIPE          &kp LEFT_BRACE    &kp RBRC             &trans  &to 0                          &trans             &to 4                      &trans
+  &kp GRAVE  &kp TILDE      &kp MINUS         &kp LPAR          &kp RPAR             &trans  &kht LEFT_SHIFT C_VOLUME_DOWN  &kht LCTRL C_MUTE  &kht LEFT_ALT C_VOLUME_UP  &trans
+  &trans     &kp AMPERSAND  &kp GREATER_THAN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &trans  &kp C_PREVIOUS                 &kp C_PLAY_PAUSE   &kp C_NEXT                 &trans
+                            &trans            &trans            &trans               &trans  &trans                         &trans
             >;
         };
 
