@@ -81,11 +81,6 @@
             bindings = <&kp PSCRN>;
             key-positions = <20 9>;
         };
-
-        combo_ralt {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <31 34>;
-        };
     };
 
     keymap {
@@ -100,10 +95,10 @@
 
             display-name = "Base";
             bindings = <
-  &kht EXCLAMATION Q  &kht AT_SIGN W   &kht RA(E) E  &kp R              &lt 1 T           &kp Y          &kht RA(U) U       &kht RA(I) I     &kht RA(O) O        &kp SEMICOLON
+  &kht EXCLAMATION Q  &kht AT_SIGN W   &kht RA(E) E  &kp R              &lt 1 T           &lt 2 Y        &kht RA(U) U       &kht RA(I) I     &kht RA(O) O        &kp SEMICOLON
   &kht RA(A) A        &kht LEFT_ALT S  &kht LCTRL D  &kht LEFT_SHIFT F  &lt 4 G           &kht MINUS H   &kht LEFT_SHIFT J  &kht LCTRL K     &kht LEFT_ALT L     &kht PLUS P
-  &kp Z               &kht LC(X) X     &kht LC(C) C  &kht LC(V) V       &kht LC(B) B      &kht RA(N) N   &kht SQT M         &kht HASH COMMA  &kht RA(SLASH) DOT  &kht QUESTION SLASH
-                                       &trans        &kp SPACE          &kp LEFT_SHIFT    &kp BACKSPACE  &kp RET            &lt 2 TAB
+  &kp Z               &kht LC(X) X     &kht LC(C) C  &kht LC(V) V       &lt 3 B           &kht RA(N) N   &kht SQT M         &kht HASH COMMA  &kht RA(SLASH) DOT  &kht QUESTION SLASH
+                                       &trans        &kp SPACE          &kp LEFT_SHIFT    &kp BACKSPACE  &kp RET            &trans
             >;
         };
 
@@ -116,10 +111,10 @@
 
             display-name = "Num";
             bindings = <
-  &to 5   &trans  &trans  &trans  &trans    &kp PERIOD    &kp N7                    &kp N8         &kp N9                  &kp EQUAL
-  &trans  &trans  &trans  &trans  &trans    &kp SLASH     &kht LEFT_SHIFT NUMBER_4  &kht LCTRL N5  &kht LEFT_ALT NUMBER_6  &kp MINUS
-  &trans  &trans  &trans  &trans  &trans    &kp ASTERISK  &kp NUMBER_1              &kp NUMBER_2   &kp NUMBER_3            &kp PLUS
-                  &trans  &trans  &trans    &trans        &trans                    &kp N0
+  &to 5   &trans  &trans  &trans  &trans    &kp ASTRK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
+  &trans  &trans  &trans  &trans  &trans    &kp MINUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
+  &trans  &trans  &trans  &trans  &trans    &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+                  &trans  &trans  &trans    &trans      &kp NUMBER_0  &trans
             >;
         };
 
@@ -132,24 +127,24 @@
 
             display-name = "Sym";
             bindings = <
-  &trans     &kp BACKSLASH  &kp PIPE          &kp LEFT_BRACE    &kp RBRC             &trans  &trans                         &trans             &trans                     &trans
-  &kp GRAVE  &kp TILDE      &kp MINUS         &kp LPAR          &kp RPAR             &trans  &kht LEFT_SHIFT C_VOLUME_DOWN  &kht LCTRL C_MUTE  &kht LEFT_ALT C_VOLUME_UP  &trans
-  &trans     &kp AMPERSAND  &kp GREATER_THAN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &trans  &kp C_PREVIOUS                 &kp C_PLAY_PAUSE   &kp C_NEXT                 &trans
-                            &trans            &trans            &trans               &trans  &trans                         &trans
+  &trans     &kp BACKSLASH  &kp PIPE          &kp LEFT_BRACE    &kp RBRC             &trans  &trans  &trans  &trans  &trans
+  &kp GRAVE  &kp TILDE      &kp MINUS         &kp LPAR          &kp RPAR             &trans  &trans  &trans  &trans  &trans
+  &trans     &kp AMPERSAND  &kp GREATER_THAN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &trans  &trans  &trans  &trans  &trans
+                            &trans            &trans            &trans               &trans  &trans  &trans
             >;
         };
 
         Media {
             display-name = "Media";
             bindings = <
-  &trans     &kp BACKSLASH  &kp PIPE          &kp LEFT_BRACE    &kp RBRC             &trans  &trans                         &trans             &trans                     &trans
-  &kp GRAVE  &kp TILDE      &kp MINUS         &kp LPAR          &kp RPAR             &trans  &kht LEFT_SHIFT C_VOLUME_DOWN  &kht LCTRL C_MUTE  &kht LEFT_ALT C_VOLUME_UP  &trans
-  &trans     &kp AMPERSAND  &kp GREATER_THAN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &trans  &kp C_PREVIOUS                 &kp C_PLAY_PAUSE   &kp C_NEXT                 &trans
-                            &trans            &trans            &trans               &trans  &trans                         &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans                         &trans             &trans                     &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &kht LEFT_SHIFT C_VOLUME_DOWN  &kht LCTRL C_MUTE  &kht LEFT_ALT C_VOLUME_UP  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &kp C_PREVIOUS                 &kp C_PLAY_PAUSE   &kp C_NEXT                 &trans
+                  &trans  &trans  &trans    &trans  &trans                         &trans
             >;
         };
 
-        nav_layer {
+        Nav {
             display-name = "Nav";
             bindings = <
   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4    &trans  &par_macro  &kp UP_ARROW  &bra_macro  &cur_macro
