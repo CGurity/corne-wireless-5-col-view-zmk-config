@@ -111,10 +111,10 @@
 
             display-name = "Num";
             bindings = <
-  &to 5   &trans  &trans  &trans  &trans    &kp ASTRK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
-  &trans  &trans  &trans  &trans  &trans    &kp MINUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
-  &trans  &trans  &trans  &trans  &trans    &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-                  &trans  &trans  &trans    &trans      &kp NUMBER_0  &trans
+  &trans  &trans  &trans  &kp LS(SEMICOLON)  &trans    &kp ASTRK   &kht F7 NUMBER_7  &kht F8 NUMBER_8  &kht F9 NUMBER_9  &kht F10 EQUAL
+  &trans  &trans  &trans  &trans             &trans    &kp MINUS   &kht F4 NUMBER_4  &kht F5 NUMBER_5  &kht F6 NUMBER_6  &kht F11 PLUS
+  &trans  &trans  &trans  &trans             &trans    &kp PERIOD  &kht F1 NUMBER_1  &kht F2 NUMBER_2  &kht F3 NUMBER_3  &kht F12 SLASH
+                  &trans  &trans             &trans    &trans      &kp NUMBER_0      &trans
             >;
         };
 
@@ -147,20 +147,10 @@
         Nav {
             display-name = "Nav";
             bindings = <
-  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4    &trans  &par_macro  &kp UP_ARROW  &bra_macro  &cur_macro
-  &bt BT_CLR    &trans        &trans        &kp LC(LEFT_WIN)  &trans          &trans  &kp LEFT    &kp DOWN      &kp RIGHT   &trans
-  &out OUT_TOG  &trans        &trans        &trans            &trans          &trans  &kp HOME    &trans        &kp END     &kp F2
-                              &trans        &trans            &trans          &trans  &trans      &trans
-            >;
-        };
-
-        fn {
-            display-name = "Fn";
-            bindings = <
-  &to 0   &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10
-  &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-  &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12
-                  &trans  &trans  &trans    &trans  &trans  &trans
+  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4    &trans    &par_macro  &kp UP_ARROW  &bra_macro  &cur_macro
+  &bt BT_CLR    &trans        &trans        &kp LC(LEFT_WIN)  &trans          &kp HOME  &kp LEFT    &kp DOWN      &kp RIGHT   &kp END
+  &out OUT_TOG  &trans        &trans        &trans            &trans          &trans    &trans      &kp F2        &trans      &trans
+                              &trans        &trans            &trans          &trans    &trans      &trans
             >;
         };
     };
