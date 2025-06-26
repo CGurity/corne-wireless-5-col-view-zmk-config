@@ -54,7 +54,7 @@
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <11 12>;
+            key-positions = <0 1>;
         };
 
         combo_tab {
