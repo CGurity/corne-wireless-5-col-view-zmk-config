@@ -111,10 +111,10 @@
 
             display-name = "Num";
             bindings = <
-  &trans  &trans  &trans  &kp LS(SEMICOLON)  &trans    &kp ASTRK   &kht F7 NUMBER_7  &kht F8 NUMBER_8  &kht F9 NUMBER_9  &kht F10 EQUAL
-  &trans  &trans  &trans  &trans             &trans    &kp MINUS   &kht F4 NUMBER_4  &kht F5 NUMBER_5  &kht F6 NUMBER_6  &kht F11 PLUS
-  &trans  &trans  &trans  &trans             &trans    &kp PERIOD  &kht F1 NUMBER_1  &kht F2 NUMBER_2  &kht F3 NUMBER_3  &kht F12 SLASH
-                  &trans  &trans             &trans    &trans      &kp NUMBER_0      &trans
+  &trans  &trans        &trans            &kp LS(SEMICOLON)  &trans    &kp ASTRK   &kht F7 NUMBER_7  &kht F8 NUMBER_8  &kht F9 NUMBER_9  &kht F10 EQUAL
+  &trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT     &trans    &kp MINUS   &kht F4 NUMBER_4  &kht F5 NUMBER_5  &kht F6 NUMBER_6  &kht F11 PLUS
+  &trans  &trans        &trans            &trans             &trans    &kp PERIOD  &kht F1 NUMBER_1  &kht F2 NUMBER_2  &kht F3 NUMBER_3  &kht F12 SLASH
+                        &trans            &trans             &trans    &trans      &kp NUMBER_0      &trans
             >;
         };
 
