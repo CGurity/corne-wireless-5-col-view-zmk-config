@@ -165,10 +165,10 @@
 
         GDocs {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &kp LC(LS(NUMBER_7))  &kp LS(LC(NUMBER_8))     &trans             &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &kp LA(LC(KP_N4))     &kp LA(LC(KP_NUMBER_5))  &trans             &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &kp LA(LC(N1))        &kp LA(LC(NUMBER_2))     &kp LA(LC(KP_N3))  &trans
-                  &trans  &trans  &trans    &trans  &kp LA(LC(NUMBER_0))  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &kp LC(LS(NUMBER_7))     &kp LS(LC(NUMBER_8))     &trans                   &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &kp LA(LC(KP_NUMBER_4))  &kp LA(LC(KP_NUMBER_5))  &trans                   &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &kp LA(LC(KP_NUMBER_1))  &kp LA(LC(KP_NUMBER_2))  &kp LA(LC(KP_NUMBER_3))  &trans
+                  &trans  &trans  &trans    &trans  &kp LA(LC(NUMBER_0))     &trans
             >;
 
             label = "GDocs";
