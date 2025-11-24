@@ -51,6 +51,20 @@
             bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW>;
             label = "CUR_MACRO";
         };
+
+        H1: H1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LC(LEFT_ALT)>,
+                <&macro_press>,
+                <&kp KP_NUMBER_1>,
+                <&macro_tap>,
+                <&kp LC(LEFT_ALT)>,
+                <&macro_release>;
+
+            label = "H1";
+        };
     };
 
     combos {
@@ -167,7 +181,7 @@
             bindings = <
   &trans  &trans  &trans  &trans  &trans    &trans  &kp LC(LS(NUMBER_7))     &kp LS(LC(NUMBER_8))     &trans                   &trans
   &trans  &trans  &trans  &trans  &trans    &trans  &kp LA(LC(KP_NUMBER_4))  &kp LA(LC(KP_NUMBER_5))  &trans                   &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &kp LA(LC(KP_NUMBER_1))  &kp LA(LC(KP_NUMBER_2))  &kp LA(LC(KP_NUMBER_3))  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &H1                      &kp LA(LC(KP_NUMBER_2))  &kp LA(LC(KP_NUMBER_3))  &trans
                   &trans  &trans  &trans    &trans  &kp LA(LC(NUMBER_0))     &trans
             >;
 
